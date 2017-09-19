@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.huiyi.huiyifan">
+    <uses-sdk
+        android:minSdkVersion="8" />
+    <uses-permission android:name="android.permission.CALL_PHONE" /><!-- 允许一个程序初始化一个电话拨号不需通过拨号 用户界面需要用户确认 -->
+    <uses-permission android:name="android.permission.VIBRATE" /><!-- 允许振动 -->
+    <uses-permission android:name="android.permission.INTERNET" /><!-- 访问网络连接-->
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /><!-- 允许写入SD卡权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/><!-- 在SD卡中创建和删除的权限 -->
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".ui.HelloActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ui.LoginActivity"></activity>
+        <activity android:name=".ui.AboutActivity"></activity>
+        <activity android:name=".ui.MainActivity"></activity>
+        <activity android:name=".ui.ExportActivity"></activity>
+        <activity android:name=".ui.UpdateActivity"></activity>
+
+        <activity
+            android:name=".ui.ShipmentActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>  <!-- 默认隐藏键盘 -->
+        <activity
+            android:name=".ui.StorageActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity><!-- 默认隐藏键盘 -->
+
+        <activity
+            android:name=".ui.RefundActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity><!-- 默认隐藏键盘 -->
+    </application>
+
+
+</manifest>

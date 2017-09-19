@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp">
+
+    <Button
+        android:id="@+id/update_bt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/shape"
+        android:text="@string/string_update_update"
+        android:layout_marginTop="20dp"
+        />
+
+    <!-- 账号资料 -->
+    <TextView
+        android:id="@+id/update_account_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/colorRed"
+        android:layout_marginTop="10dp"
+        />
+
+    <!-- 产品资料 -->
+    <TextView
+        android:id="@+id/update_product_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/colorRed"
+        android:layout_marginTop="10dp"
+        />
+
+    <!-- 客户资料 -->
+    <TextView
+        android:id="@+id/update_clientele_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/colorRed"
+        android:layout_marginTop="10dp"
+        />
+
+    <!-- 生产订单 -->
+    <TextView
+        android:id="@+id/update_production_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/colorRed"
+        android:layout_marginTop="10dp"
+        />
+
+    <!-- 销售订单 -->
+    <TextView
+        android:id="@+id/update_sell_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/colorRed"
+        android:layout_marginTop="10dp"
+        />
+</LinearLayout>

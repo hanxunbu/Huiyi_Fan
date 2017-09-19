@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string_address"
+            />
+        <EditText
+            android:id="@+id/about_address_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="http://120.77.48.11:8035/web.asmx"
+            android:layout_marginTop="10dp"
+            />
+        <Button
+            android:id="@+id/about_save_bt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@string/string_about_save"
+            android:background="@drawable/shape"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注意:服务器地址不要随意修改!"
+            android:textColor="@color/colorRed"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+</LinearLayout>
